@@ -15,7 +15,7 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
 var db;
-MongoClient.connect("mongodb+srv://pdg916:hello@5916@login.mdw0r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useUnifiedTopology: true}, (error, client)=>{
+MongoClient.connect("?", {useUnifiedTopology: true}, (error, client)=>{
   if(error){
     return console.log(error);
   }
